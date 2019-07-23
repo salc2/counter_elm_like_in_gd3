@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "InputEventAction",
+"class": "CustomInputEvent",
+"language": "GDScript",
+"path": "res://CustomInputEvent.gd"
+}, {
+"base": "Node",
+"class": "CustomState",
+"language": "GDScript",
+"path": "res://CustomState.gd"
+} ]
+_global_script_class_icons={
+"CustomInputEvent": "",
+"CustomState": ""
+}
+
+[application]
+
+config/name="TestingUDF"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=480
+window/size/height=720
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
