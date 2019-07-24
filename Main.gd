@@ -53,6 +53,8 @@ func update(state:CustomState,event: CustomInputEvent) -> CustomState:
 		return state
 	
 func view(state: CustomState) -> void:
+	$Player/PlayerAnimation.animation = "walking"
+	$Player/PlayerAnimation.play()
 	$FPS.set_fps(state._fps)
 	
 func _unhandled_input(event: InputEvent):
